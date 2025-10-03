@@ -13,8 +13,8 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: #001f3f; /* لون الخلفية */
+            color: #fff; /* لون النص الأساسي */
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -62,21 +62,22 @@
         .link-button {
             display: block;
             padding: 16px 20px;
-            background: white;
-            color: #333;
+            background: #001f3f; /* لون الخلفية */
+            color: white; /* لون النص */
             text-decoration: none;
             border-radius: 12px;
             font-weight: 600;
             font-size: 16px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border: 2px solid transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2); /* حد فاتح */
         }
         
         .link-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #003366; /* لون أفتح عند التمرير */
+            border-color: rgba(255, 255, 255, 0.4);
         }
         
         .link-icon {
@@ -96,7 +97,7 @@
         <!-- قسم البروفايل -->
         <div class="profile">
             <!-- استبدل هذا الرابط بصورة البروفايل الخاصة بك -->
-            <img src="https://ibb.co/rKLD4kn1" alt="استانبول للأزياء" class="profile-img">
+            <img src="https://via.placeholder.com/120" alt="استانبول للأزياء" class="profile-img">
             <h1 class="profile-name">اسطنبول للأزياء</h1>
             <p class="profile-location">📍 الدوادمي</p>
         </div>
@@ -104,21 +105,20 @@
         <!-- قسم الروابط -->
         <div class="links-container">
             <a href="https://instagram.com/istanbulsa2" class="link-button">
-                <span class="link-icon">📸</span> INSTEGRAM
-            </a>
-            <a href="https://snapchat.com/istanbulsa2" class="link-button">
-                <span class="link-icon">📸</span> SNAPCHAT
+                <span class="link-icon">📸</span> إنستقرام
             </a>
             
             <a href="https://tiktok.com/@istanbulsa2" class="link-button">
-                <span class="link-icon">🎵</span> TIKTOK 
+                <span class="link-icon">🎵</span> تيك توك
             </a>
             
-            <a href="https://share.google.com/8dY7ipQcSVQNkNxE7" class="link-button">
-                <span class="link-icon">🌐</span> الموقع على خرائط جوجل
+            <a href="https://snapchat.com/@istanbulsa2" class="link-button">
+                <span class="link-icon">👻</span> سناب شات
             </a>
             
-        
+            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3e2efe7c02deb689:0xa73d41eec70cf473?hl=en&utm_campaign=ml-sul&g_ep=Eg1tbF8yMDI1MDUyOF8wIOC7DCoASAJQAg%3D%3D" class="link-button">
+                <span class="link-icon">📍</span> موقعنا على خرائط جوجل
+            </a>
         </div>
         
         <!-- الفوتر -->
