@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@istanbulsa | Linktree</title>
+    <title>اسطنبول للأزياء</title>
     <style>
         * {
             margin: 0;
@@ -13,87 +13,82 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #ffffff;
             color: #000000;
-            line-height: 1.4;
+            line-height: 1.6;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             padding: 0;
+            margin: 0;
         }
         
         .container {
-            width: 100%;
             max-width: 400px;
             margin: 0 auto;
+            padding: 0;
         }
         
-        /* البروفايل - مع صورة صغيرة ودائرية */
-        .profile {
-            text-align: center;
-            margin-bottom: 0;
+        /* الهيدر */
+        .header {
             background: #4A90E2;
-            padding: 25px 20px 20px;
             color: white;
-        }
-        
-        .profile-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 0 auto 12px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            object-fit: cover;
-        }
-        
-        .profile-name {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .profile-description {
-            font-size: 13px;
-            line-height: 1.5;
+            padding: 30px 20px;
             text-align: center;
+        }
+        
+        .main-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .sub-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .username {
+            font-size: 16px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            font-size: 14px;
+            line-height: 1.8;
             opacity: 0.9;
         }
         
         /* الخط الفاصل */
         .divider {
             height: 1px;
-            background-color: #e0e0e0;
+            background: #e0e0e0;
             margin: 0;
-            width: 100%;
         }
         
-        /* الروابط - مطابقة للصورة مع إضافة الموقع */
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            padding: 15px 20px;
-            background: white;
+        /* قسم الروابط */
+        .links-section {
+            padding: 25px 20px;
         }
         
-        .link-section {
-            margin-bottom: 15px;
-        }
-        
-        .link-title {
-            font-size: 13px;
+        .section-title {
+            font-size: 16px;
             font-weight: 600;
-            color: #000000;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+            color: #333;
         }
         
         .link-item {
             display: block;
-            padding: 10px 0;
-            color: #000000;
+            padding: 12px 0;
+            color: #000;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 14px;
             border-bottom: 1px solid #f0f0f0;
         }
         
@@ -105,54 +100,64 @@
             font-weight: 600;
         }
         
-        /* العنوان - للدوادمي */
-        .address {
-            font-size: 13px;
-            color: #000000;
+        /* العنوان */
+        .address-section {
+            padding: 20px;
+            background: #f8f9fa;
             text-align: center;
-            line-height: 1.5;
-            padding: 15px 20px;
-            background: white;
-            border-top: 1px solid #f0f0f0;
         }
         
-        /* الفوتر - مطابق للصورة */
+        .address-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .address {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* الفوتر */
         .footer {
+            padding: 20px;
             text-align: center;
-            padding: 15px 20px;
-            background: white;
+            background: #f8f9fa;
             border-top: 1px solid #e0e0e0;
-            width: 100%;
         }
         
         .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 6px;
-            flex-wrap: wrap;
+            margin-bottom: 10px;
         }
         
         .footer-link {
-            font-size: 11px;
-            color: #666666;
+            font-size: 12px;
+            color: #666;
             text-decoration: none;
+            margin: 0 5px;
         }
         
         .footer-copyright {
-            font-size: 11px;
-            color: #999999;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .separator {
+            color: #999;
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- البروفايل - صورة دائرية صغيرة -->
-        <div class="profile">
-            <!-- استبدل هذا الرابط بصورة البروفايل الحقيقية -->
-            <img src="https://i.ibb.co/Cs8Wj573/IMG-20251001-WA0017.jpg" alt="IMG-20251001-WA0017" border="0">
-            <h1 class="profile-name">@istanbulsa</h1>
-            <div class="profile-description">
+        <!-- الهيدر -->
+        <div class="header">
+            <div class="main-title">اسطنبول</div>
+            <div class="sub-title">ISTANBUL</div>
+            <div class="username">istanbulsa@</div>
+            <div class="description">
                 مركز اسطنبول للازياء التجاري يوفر لكم أحدث<br>
                 الازياء والمستلزمات بجودة عالية وأسعار مناسبة
             </div>
@@ -161,26 +166,27 @@
         <!-- الخط الفاصل -->
         <div class="divider"></div>
         
-        <!-- الروابط - مع إضافة رابط الموقع -->
-        <div class="links-container">
-            <div class="link-section">
-                <div class="link-title">on Snapchat</div>
-                <a href="https://snapchat.com/add/istanbulsa2" class="link-item">
-                    <strong>Log in | TikTok</strong>
-                </a>
-                <a href="https://instagram.com/istanbulsa2" class="link-item">
-                    Instagram
-                </a>
-                <a href="https://share.google.com/8dY7ipQcSVQNkNxE7" class="link-item">
-                    Website
-                </a>
-            </div>
+        <!-- قسم الروابط -->
+        <div class="links-section">
+            <div class="section-title">on Snapchat</div>
+            <a href="https://snapchat.com/add/istanbulsa2" class="link-item">
+                <strong>Log in | TikTok</strong>
+            </a>
+            <a href="https://instagram.com/istanbulsa2" class="link-item">
+                Instagram
+            </a>
+            <a href="https://share.google.com/8dY7ipQcSVQNkNxE7" class="link-item">
+                Website
+            </a>
         </div>
         
-        <!-- العنوان - للدوادمي -->
-        <div class="address">
-            إسطنبول للازياء - الدوادمي<br>
-            دوادمي، الرياض 11911
+        <!-- الخط الفاصل -->
+        <div class="divider"></div>
+        
+        <!-- العنوان -->
+        <div class="address-section">
+            <div class="address-title">اسطنبول للازياء - الدوادمي</div>
+            <div class="address">دوادمي، الرياض 11911</div>
         </div>
         
         <!-- الخط الفاصل -->
@@ -189,13 +195,13 @@
         <!-- الفوتر -->
         <div class="footer">
             <div class="footer-links">
-                <a href="#" class="footer-link">Cookie Preferences</a>
-                <span>•</span>
-                <a href="#" class="footer-link">Report</a>
-                <span>•</span>
                 <a href="#" class="footer-link">Privacy</a>
+                <span class="separator">▪</span>
+                <a href="#" class="footer-link">Report</a>
+                <span class="separator">▪</span>
+                <a href="#" class="footer-link">Cookie Preferences</a>
             </div>
-            <div class="footer-copyright">© 2024</div>
+            <div class="footer-copyright">2024 ©</div>
         </div>
     </div>
 </body>
