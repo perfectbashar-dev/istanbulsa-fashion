@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اسطنبول للأزياء</title>
+    <title>أسطنبول للأزياء الدوادمي</title>
     <style>
         * {
             margin: 0;
@@ -14,139 +14,149 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
             min-height: 100vh;
-            padding: 0;
-            margin: 0;
+            padding: 20px;
         }
         
         .container {
             max-width: 400px;
             margin: 0 auto;
-            padding: 0;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
         
         /* الهيدر */
         .header {
-            background: #4A90E2;
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
             color: white;
-            padding: 30px 20px;
+            padding: 30px 25px;
             text-align: center;
         }
         
-        .main-title {
-            font-size: 28px;
+        .store-name {
+            font-size: 24px;
             font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .sub-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            opacity: 0.9;
+            margin-bottom: 8px;
         }
         
         .username {
             font-size: 16px;
-            background: rgba(255,255,255,0.2);
-            padding: 8px 15px;
-            border-radius: 20px;
-            display: inline-block;
+            opacity: 0.9;
             margin-bottom: 20px;
         }
         
         .description {
             font-size: 14px;
-            line-height: 1.8;
-            opacity: 0.9;
+            line-height: 1.6;
+            opacity: 0.95;
         }
         
-        /* الخط الفاصل */
-        .divider {
-            height: 1px;
-            background: #e0e0e0;
-            margin: 0;
+        /* المحتوى */
+        .content {
+            padding: 25px;
         }
         
-        /* قسم الروابط */
-        .links-section {
-            padding: 25px 20px;
+        .share-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
         }
         
         .section-title {
             font-size: 16px;
             font-weight: 600;
+            color: #333;
             margin-bottom: 15px;
-            color: #333;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
         }
         
-        .link-item {
-            display: block;
-            padding: 12px 0;
-            color: #000;
-            text-decoration: none;
-            font-size: 14px;
-            border-bottom: 1px solid #f0f0f0;
+        /* خيارات السوشيال ميديا */
+        .social-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         
-        .link-item:last-child {
-            border-bottom: none;
-        }
-        
-        .link-item strong {
-            font-weight: 600;
-        }
-        
-        /* العنوان */
-        .address-section {
-            padding: 20px;
+        .option-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
             background: #f8f9fa;
-            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
         }
         
-        .address-title {
-            font-size: 15px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #333;
+        .option-item.checked {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            border-color: #4CAF50;
         }
         
-        .address {
+        .checkbox {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            margin-left: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .checked .checkbox {
+            background: white;
+            border-color: white;
+        }
+        
+        .checked .checkbox::after {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
             font-size: 14px;
-            color: #666;
-            line-height: 1.6;
+        }
+        
+        .option-text {
+            flex: 1;
+            font-weight: 500;
         }
         
         /* الفوتر */
         .footer {
-            padding: 20px;
             text-align: center;
+            padding: 20px;
             background: #f8f9fa;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid #e9ecef;
         }
         
-        .footer-links {
-            margin-bottom: 10px;
-        }
-        
-        .footer-link {
+        .made-with {
             font-size: 12px;
             color: #666;
-            text-decoration: none;
-            margin: 0 5px;
         }
         
-        .footer-copyright {
-            font-size: 12px;
-            color: #999;
+        /* تأثيرات */
+        .option-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
-        .separator {
-            color: #999;
-            margin: 0 5px;
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
         }
     </style>
 </head>
@@ -154,55 +164,49 @@
     <div class="container">
         <!-- الهيدر -->
         <div class="header">
-            <div class="main-title">اسطنبول</div>
-            <div class="sub-title">ISTANBUL</div>
-            <div class="username">istanbulsa@</div>
+            <div class="store-name">أسطنبول للأزياء الدوادمي</div>
+            <div class="username">@istanbulsa2</div>
             <div class="description">
-                مركز اسطنبول للازياء التجاري يوفر لكم أحدث<br>
-                الازياء والمستلزمات بجودة عالية وأسعار مناسبة
+                مركز اسطنبول للأزياء التجاري يوفر لكم أحدث الأزياء والمستلزمات بجودة عالية وأسعار مناسبة
             </div>
         </div>
         
-        <!-- الخط الفاصل -->
-        <div class="divider"></div>
-        
-        <!-- قسم الروابط -->
-        <div class="links-section">
-            <div class="section-title">on Snapchat</div>
-            <a href="https://snapchat.com/add/istanbulsa2" class="link-item">
-                <strong>Log in | TikTok</strong>
-            </a>
-            <a href="https://instagram.com/istanbulsa2" class="link-item">
-                Instagram
-            </a>
-            <a href="https://share.google.com/8dY7ipQcSVQNkNxE7" class="link-item">
-                Website
-            </a>
+        <!-- المحتوى -->
+        <div class="content">
+            <a href="#" class="share-btn">مشاركة الملف الشخصي</a>
+            
+            <div class="section-title">استخدام كلية المشروع</div>
+            <div class="social-options">
+                <div class="option-item checked">
+                    <div class="checkbox"></div>
+                    <div class="option-text">Instagram</div>
+                </div>
+                
+                <div class="option-item checked">
+                    <div class="checkbox"></div>
+                    <div class="option-text">TikTok</div>
+                </div>
+                
+                <div class="option-item checked">
+                    <div class="checkbox"></div>
+                    <div class="option-text">المواقع على خرائط جوجل</div>
+                </div>
+            </div>
         </div>
-        
-        <!-- الخط الفاصل -->
-        <div class="divider"></div>
-        
-        <!-- العنوان -->
-        <div class="address-section">
-            <div class="address-title">اسطنبول للازياء - الدوادمي</div>
-            <div class="address">دوادمي، الرياض 11911</div>
-        </div>
-        
-        <!-- الخط الفاصل -->
-        <div class="divider"></div>
         
         <!-- الفوتر -->
         <div class="footer">
-            <div class="footer-links">
-                <a href="#" class="footer-link">Privacy</a>
-                <span class="separator">▪</span>
-                <a href="#" class="footer-link">Report</a>
-                <span class="separator">▪</span>
-                <a href="#" class="footer-link">Cookie Preferences</a>
-            </div>
-            <div class="footer-copyright">2024 ©</div>
+            <div class="made-with">Made with Manus</div>
         </div>
     </div>
+
+    <script>
+        // إضافة تفاعل للخيارات
+        document.querySelectorAll('.option-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('checked');
+            });
+        });
+    </script>
 </body>
 </html>
