@@ -103,10 +103,10 @@
         }
         
         .link-text {
-    flex: 1;
-    text-align: right; /* التعديل هنا */
-    padding-right: 15px; /* التعديل هنا */
+            flex: 1;
+            text-align: center; /* التعديل هنا: جعل النص في الوسط */
         }
+        
         .link-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -122,7 +122,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 10px; /* المسافة بين الأيقونة والنص */
+            order: 2; /* التعديل هنا: جعل الأيقونة على اليمين */
         }
         
         .link-icon {
@@ -215,24 +215,32 @@
         
         <!-- قسم الروابط -->
         <div class="links-container">
-            <a href="https://snapchat.com/add/istanbulsa2" class="link-button">
-                <img src="https://i.ibb.co/wF1Mjpsf/051b4760-5804-40b2-9439-e0f65cc39ed6-square.jpg " alt="snapchat" class="social-icon">
-               اسطنبول للأزياء on snapchat
+            <a href="https://snapchat.com/add/istanbulsa2" class="link-button snapchat-button">
+                <span class="link-text">اسطنبول للأزياء on snapchat</span>
+                <div class="link-icon-container">
+                    <img src="https://i.ibb.co/wF1Mjpsf/051b4760-5804-40b2-9439-e0f65cc39ed6-square.jpg" alt="snapchat" class="social-icon">
+                </div>
             </a>
             
-            <a href="https://tiktok.com/@istanbulsa2" class="link-button">
-                <img src="https://i.ibb.co/Kc7VSF8Y/65a9a4d1-10fc-4009-9621-9c308ffa1207-tiktok.jpg   " alt="tiktok" class="social-icon">
-                Log in | tiktok
+            <a href="https://tiktok.com/@istanbulsa2" class="link-button tiktok-button">
+                <span class="link-text">Log in | tiktok</span>
+                <div class="link-icon-container">
+                    <img src="https://i.ibb.co/Kc7VSF8Y/65a9a4d1-10fc-4009-9621-9c308ffa1207-tiktok.jpg" alt="tiktok" class="social-icon">
+                </div>
             </a>
             
-            <a href="https://instagram.com/istanbulsa2" class="link-button">
-                <img src="https://i.ibb.co/jvHYP2Cy/c15703e1-5910-481b-b6d3-0b48fe60d39d-instagram.png" alt="إنستقرام" class="social-icon">
-                instagram
+            <a href="https://instagram.com/istanbulsa2" class="link-button instagram-button">
+                <span class="link-text">instagram</span>
+                <div class="link-icon-container">
+                    <img src="https://i.ibb.co/jvHYP2Cy/c15703e1-5910-481b-b6d3-0b48fe60d39d-instagram.png" alt="إنستقرام" class="social-icon">
+                </div>
             </a>
             
-            <a href="https://www.google.com/search?sca_esv=69badf5206a10cf0&rlz=1CDGOYI_enSA1104SA1104&hl=ar&sxsrf=AE3TifMHFHnuro80olKf8XLlH_AAwBTMEw:1759341989524&kgmid=/g/11swtc7nwk&q=%D8%A7%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84+%D9%84%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%87+%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D8%B0%D9%8A%D9%87&shndl=30&source=sh/x/loc/tile/m1/3&kgs=67fcea47aa7695ac&shem=shrtsdl&utm_source=shrtsdl,sh/x/loc/tile/m1/3#ebo=0" class="link-button">
-                <img src="https://i.ibb.co/jvHYP2Cy/c15703e1-5910-481b-b6d3-0b48fe60d39d-instagram.png" alt="إنستقرام" class="social-icon">
-                اسطنبول للأزياء-الدوادمي
+            <a href="https://www.google.com/search?sca_esv=69badf5206a10cf0&rlz=1CDGOYI_enSA1104SA1104&hl=ar&sxsrf=AE3TifMHFHnuro80olKf8XLlH_AAwBTMEw:1759341989524&kgmid=/g/11swtc7nwk&q=%D8%A7%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84+%D9%84%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%87+%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D8%B0%D9%8A%D9%87&shndl=30&source=sh/x/loc/tile/m1/3&kgs=67fcea47aa7695ac&shem=shrtsdl&utm_source=shrtsdl,sh/x/loc/tile/m1/3#ebo=0" class="link-button linktree-button">
+                <span class="link-text">اسطنبول للأزياء-الدوادمي</span>
+                <div class="link-icon-container">
+                    <img src="https://i.ibb.co/jvHYP2Cy/c15703e1-5910-481b-b6d3-0b48fe60d39d-instagram.png" alt="إنستقرام" class="social-icon">
+                </div>
             </a>
         </div>
         
