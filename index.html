@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  مركز اسطنبول للأزياء</title>
+    <title>مركز اسطنبول للأزياء</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -13,7 +14,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #001f3f;
+            background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -43,6 +44,7 @@
             align-items: center;
             justify-content: center;
             background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         
         .profile-img {
@@ -66,14 +68,15 @@
         }
         
         .description {
-            background: rgba(255, 255, 255, 0.1);
+            background: #001a33; /* أزرق غامق */
             padding: 15px;
-            border-radius: 20px;
+            border-radius: 25px; /* حواف أكثر استدارة */
             margin-bottom: 25px;
             font-size: 16px;
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
         }
         
         .links-container {
@@ -85,35 +88,44 @@
         .link-button {
             display: flex;
             align-items: center;
-            justify-content: center;
             padding: 16px 20px;
-            background: #001f3f;
+            background: #001a33; /* أزرق غامق */
             color: white;
             text-decoration: none;
-            border-radius: 20px;
+            border-radius: 25px; /* حواف أكثر استدارة */
             font-weight: 600;
             font-size: 16px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
         }
         
         .link-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            background: #003366;
+            background: #00264d; /* أزرق غامق أفتح قليلاً عند التمرير */
             border-color: rgba(255, 255, 255, 0.4);
         }
         
+        .link-icon-container {
+            width: 40px; /* حجم أكبر للأيقونات */
+            height: 40px;
+            border-radius: 50%; /* أيقونات دائرية */
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px; /* المسافة بين الأيقونة والنص */
+        }
+        
         .link-icon {
-            margin-left: 8px;
-            font-size: 18px;
+            font-size: 20px; /* حجم أكبر للأيقونات */
         }
         
         .social-icon {
             width: 20px;
             height: 20px;
-            margin-left: 8px;
             object-fit: contain;
         }
         
@@ -125,9 +137,9 @@
         }
         
         .address {
-            background: rgba(255, 255, 255, 0.1);
+            background: #001a33; /* أزرق غامق */
             padding: 12px;
-            border-radius: 12px;
+            border-radius: 20px; /* حواف أكثر استدارة */
             margin-top: 10px;
             font-size: 14px;
             line-height: 1.5;
@@ -138,6 +150,45 @@
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
         }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 12px;
+            transition: color 0.3s;
+        }
+        
+        .footer-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .whatsapp-button .link-icon-container {
+            background: rgba(37, 211, 102, 0.2);
+        }
+        
+        .snapchat-button .link-icon-container {
+            background: rgba(255, 252, 0, 0.2);
+        }
+        
+        .tiktok-button .link-icon-container {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .instagram-button .link-icon-container {
+            background: rgba(225, 48, 108, 0.2);
+        }
+        
+        .linktree-button .link-icon-container {
+            background: rgba(0, 119, 181, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -145,17 +196,15 @@
         <!-- قسم البروفايل -->
         <div class="profile">
             <div class="profile-img-container">
-                <img src="https://i.ibb.co/yFpTpRN9/e447c18e-f933-4e88-8814-c069e4ee447b-IMG-5062.jpg  " alt="فاكس الحياة" class="profile-img">
-                <p class="profile-username">@istanbulsa2</p>
+                <img src="https://i.ibb.co/Kc7VSF8Y/65a9a4d1-10fc-4009-9621-9c308ffa1207-tiktok.jpg" alt="مركز اسطنبول للأزياء" class="profile-img">
             </div>
-            <h1 class="profile-name"> </h1>
-            
+            <h1 class="profile-name">مركز اسطنبول للأزياء</h1>
+            <p class="profile-username">@istanbulsa2</p>
         </div>
         
         <!-- قسم الوصف -->
         <div class="description">
             مركز اسطنبول للأزياء التجاري يوفر لكم أحدث الأزياء والمستلزمات بجودة عالية وأسعار مناسبة
-            
         </div>
         
         <!-- قسم الروابط -->
@@ -175,7 +224,7 @@
                 instagram
             </a>
             
-            <a href="https://linktr.ee/istanbulsa2" class="link-button">
+            <a href="https://www.google.com/search?sca_esv=69badf5206a10cf0&rlz=1CDGOYI_enSA1104SA1104&hl=ar&sxsrf=AE3TifMHFHnuro80olKf8XLlH_AAwBTMEw:1759341989524&kgmid=/g/11swtc7nwk&q=%D8%A7%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84+%D9%84%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%87+%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D8%B0%D9%8A%D9%87&shndl=30&source=sh/x/loc/tile/m1/3&kgs=67fcea47aa7695ac&shem=shrtsdl&utm_source=shrtsdl,sh/x/loc/tile/m1/3#ebo=0" class="link-button">
                 <img src="https://i.ibb.co/jvHYP2Cy/c15703e1-5910-481b-b6d3-0b48fe60d39d-instagram.png" alt="إنستقرام" class="social-icon">
                 اسطنبول للأزياء-الدوادمي
             </a>
@@ -184,7 +233,16 @@
         <!-- الفوتر -->
         <div class="footer">
             <div class="address">
-              <br>
+                <p>نحن نقدم أحدث صيحات الموضة بأسعار مناسبة للجميع</p>
+                <p>للاستفسارات: info@istanbulsa2.com</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Cookie Preferences</a>
+                <a href="#" class="footer-link">Report</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+            <div class="linktree-brand">
+                &copy; 2023 مركز اسطنبول للأزياء. جميع الحقوق محفوظة.
             </div>
         </div>
     </div>
